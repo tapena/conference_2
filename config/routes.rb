@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    get "speaker/:id" => 'speaker#id'
+    get "/speakers/:id" => 'speakers#show'
+    get "/meetings" => 'meetings#index'
   end  
 end
